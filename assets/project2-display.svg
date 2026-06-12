@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Database Management System project thumbnail</title>
+  <desc id="desc">A stylized phpMyAdmin database dashboard for the CAIMS database tables.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15140f"/>
+      <stop offset="1" stop-color="#484d31"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f2ed"/>
+      <stop offset="1" stop-color="#d8d6cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="24" dy="28" stdDeviation="0" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <pattern id="grid" width="88" height="88" patternUnits="userSpaceOnUse">
+      <path d="M88 0H0V88" fill="none" stroke="#f8f5ef" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <rect width="1400" height="820" fill="url(#grid)"/>
+  <circle cx="1120" cy="210" r="175" fill="#d6ddb1" opacity=".14"/>
+  <circle cx="80" cy="680" r="155" fill="#d6ddb1" opacity=".10"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="102" width="1216" height="616" fill="url(#panel)" stroke="#c9c0ae" stroke-width="3"/>
+    <rect x="92" y="102" width="1216" height="62" fill="#77776f"/>
+    <rect x="92" y="164" width="250" height="554" fill="#dddcd7"/>
+    <rect x="342" y="164" width="966" height="68" fill="#eceeec"/>
+
+    <text x="376" y="142" fill="#ffffff" font-family="Consolas, monospace" font-size="24" font-weight="700">
+      Server: 127.0.0.1  ›  Database: caims_db
+    </text>
+
+    <text x="128" y="150" fill="#f7f4ea" font-family="Arial, sans-serif" font-size="20" font-weight="700">local database</text>
+
+    <text x="124" y="212" fill="#5e6b9f" font-family="Arial, sans-serif" font-size="42" font-style="italic" font-weight="800">php</text>
+    <text x="190" y="212" fill="#eb8b1e" font-family="Arial, sans-serif" font-size="42" font-style="italic" font-weight="800">MyAdmin</text>
+
+    <g font-family="Consolas, monospace" font-size="18">
+      <text x="126" y="286" fill="#222">caims_db</text>
+      <text x="150" y="336" fill="#222">appointments</text>
+      <text x="150" y="382" fill="#222">medical_certificates</text>
+      <text x="150" y="428" fill="#222">medicines</text>
+      <text x="150" y="474" fill="#222">patients</text>
+      <text x="150" y="520" fill="#222">prescriptions</text>
+      <text x="150" y="566" fill="#222">users</text>
+    </g>
+
+    <g fill="#ffffff" stroke="#c8c8c3">
+      <rect x="376" y="181" width="132" height="36"/>
+      <rect x="516" y="181" width="92" height="36"/>
+      <rect x="616" y="181" width="116" height="36"/>
+      <rect x="740" y="181" width="102" height="36"/>
+      <rect x="850" y="181" width="116" height="36"/>
+      <rect x="974" y="181" width="116" height="36"/>
+      <rect x="1098" y="181" width="142" height="36"/>
+    </g>
+    <g fill="#164c68" font-family="Arial, sans-serif" font-size="17" font-weight="700">
+      <text x="395" y="205">Structure</text>
+      <text x="543" y="205">SQL</text>
+      <text x="642" y="205">Search</text>
+      <text x="767" y="205">Query</text>
+      <text x="877" y="205">Export</text>
+      <text x="1000" y="205">Import</text>
+      <text x="1124" y="205">Operations</text>
+    </g>
+
+    <text x="380" y="306" fill="#596044" font-family="Arial, sans-serif" font-size="43" font-weight="800">
+      Database Management System
+    </text>
+    <text x="382" y="348" fill="#5f5d56" font-family="Consolas, monospace" font-size="22" font-weight="700">
+      6 tables in caims_db
+    </text>
+
+    <g transform="translate(380 390)" font-family="Consolas, monospace">
+      <rect width="850" height="50" fill="#d5d3cc"/>
+      <g fill="#171512" font-size="21" font-weight="800">
+        <text x="24" y="32">Table</text>
+        <text x="330" y="32">Action</text>
+        <text x="600" y="32">Rows</text>
+        <text x="690" y="32">Type</text>
+        <text x="770" y="32">Size</text>
+      </g>
+
+      <g font-size="20">
+        <rect y="50" width="850" height="48" fill="#f7f7f3"/>
+        <rect y="98" width="850" height="48" fill="#ddddda"/>
+        <rect y="146" width="850" height="48" fill="#f7f7f3"/>
+        <rect y="194" width="850" height="48" fill="#ddddda"/>
+        <rect y="242" width="850" height="48" fill="#f7f7f3"/>
+        <rect y="290" width="850" height="48" fill="#ddddda"/>
+
+        <g fill="#005486" font-weight="800">
+          <text x="24" y="82">appointments</text>
+          <text x="24" y="130">medical_certificates</text>
+          <text x="24" y="178">medicines</text>
+          <text x="24" y="226">patients</text>
+          <text x="24" y="274">prescriptions</text>
+          <text x="24" y="322">users</text>
+        </g>
+
+        <g fill="#005486">
+          <text x="330" y="82">Browse  Structure  Insert</text>
+          <text x="330" y="130">Browse  Structure  Insert</text>
+          <text x="330" y="178">Browse  Structure  Insert</text>
+          <text x="330" y="226">Browse  Structure  Insert</text>
+          <text x="330" y="274">Browse  Structure  Insert</text>
+          <text x="330" y="322">Browse  Structure  Insert</text>
+        </g>
+
+        <g fill="#171512">
+          <text x="610" y="82">2</text>
+          <text x="610" y="130">1</text>
+          <text x="610" y="178">3</text>
+          <text x="610" y="226">2</text>
+          <text x="610" y="274">1</text>
+          <text x="610" y="322">4</text>
+          <text x="690" y="82">InnoDB</text>
+          <text x="690" y="130">InnoDB</text>
+          <text x="690" y="178">InnoDB</text>
+          <text x="690" y="226">InnoDB</text>
+          <text x="690" y="274">InnoDB</text>
+          <text x="690" y="322">InnoDB</text>
+          <text x="770" y="82">32 KiB</text>
+          <text x="770" y="130">48 KiB</text>
+          <text x="770" y="178">16 KiB</text>
+          <text x="770" y="226">48 KiB</text>
+          <text x="770" y="274">80 KiB</text>
+          <text x="770" y="322">80 KiB</text>
+        </g>
+      </g>
+    </g>
+
+    <rect x="380" y="678" width="850" height="6" fill="#596044"/>
+  </g>
+</svg>
