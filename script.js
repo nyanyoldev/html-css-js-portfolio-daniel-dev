@@ -4,6 +4,8 @@ const themeToggle = document.getElementById("theme-toggle");
 const contactForm = document.querySelector(".contact-form");
 const imageFrames = document.querySelectorAll(".image-frame");
 const brandLogo = document.querySelector(".brand-mark img");
+const emailLink = document.getElementById("email-link");
+const emailText = document.getElementById("email-text");
 
 function setThemeIcon() {
     if (!themeToggle) {
@@ -44,7 +46,7 @@ if (hamburger && navLinks) {
 }
 
 if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", () => {
         setTimeout(() => {
             contactForm.reset();
         }, 500);
@@ -55,6 +57,14 @@ if (brandLogo) {
     brandLogo.addEventListener("error", () => {
         brandLogo.style.display = "none";
     });
+}
+
+if (emailLink && emailText) {
+    const emailCodes = [100, 100, 101, 118, 51, 49, 48, 56, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109];
+    const emailAddress = String.fromCharCode(...emailCodes);
+
+    emailLink.href = `mailto:${emailAddress}`;
+    emailText.textContent = emailAddress;
 }
 
 imageFrames.forEach((frame) => {

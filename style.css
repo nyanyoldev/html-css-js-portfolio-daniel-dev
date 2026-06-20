@@ -341,6 +341,31 @@ h1 {
     background: var(--surface);
 }
 
+.logo-project-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.logo-project-image {
+    aspect-ratio: 2 / 1;
+    padding: 18px;
+    background:
+        linear-gradient(90deg, rgba(248, 245, 239, 0.07) 1px, transparent 1px),
+        linear-gradient(135deg, #171512 0%, #3f462e 100%);
+    background-size: 44px 44px, auto, auto;
+}
+
+.logo-project-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 0;
+    filter: none;
+}
+
 .education-image {
     aspect-ratio: 3 / 2;
     max-width: 260px;
@@ -656,4 +681,53 @@ h2 {
     border-top: 1px solid var(--line);
     color: var(--muted);
     font-size: 0.92rem;
+}
+
+.logo-project-image {
+    display: grid !important;
+    place-items: start center !important;
+    aspect-ratio: 16 / 9 !important;
+    padding: 0 !important;
+    background:
+        linear-gradient(90deg, rgba(248, 245, 239, 0.07) 1px, transparent 1px),
+        linear-gradient(135deg, #171512 0%, #3f462e 100%) !important;
+    background-size: 44px 44px, auto !important;
+}
+
+.logo-project-image::after {
+    content: none !important;
+    display: none !important;
+}
+
+.logo-project-image img {
+    display: block !important;
+    position: relative !important;
+    z-index: 2 !important;
+    width: 68% !important;
+    height: 50% !important;
+    margin-top: 44px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    box-shadow: 14px 16px 0 rgba(0, 0, 0, 0.22) !important;
+}
+
+.logo-project-image {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    background:
+        linear-gradient(90deg, rgba(248, 245, 239, 0.07) 1px, transparent 1px),
+        linear-gradient(135deg, #171512 0%, #3f462e 100%);
+    background-size: 44px 44px, auto;
+}
+
+.logo-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: #ffffff;
+    box-shadow: 14px 16px 0 rgba(0, 0, 0, 0.22);
 }
