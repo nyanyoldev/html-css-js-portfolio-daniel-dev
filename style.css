@@ -731,3 +731,151 @@ h2 {
     background: #ffffff;
     box-shadow: 14px 16px 0 rgba(0, 0, 0, 0.22);
 }
+
+/* ==========================================================================
+   Workshop 2 Update Hub Styles
+   ========================================================================== */
+
+.update-feed {
+    display: grid;
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.update-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+}
+
+.update-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+}
+
+.update-date-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.update-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.update-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.update-pill.accent {
+    background: var(--accent);
+    color: var(--inverse);
+    border-color: var(--accent);
+}
+
+.update-card h2 {
+    font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+    line-height: 1.25;
+    color: var(--text);
+}
+
+.update-body {
+    display: grid;
+    gap: 14px;
+    color: var(--muted);
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.update-body p strong {
+    color: var(--text);
+}
+
+.reflection-callout {
+    position: relative;
+    padding: 16px 20px;
+    border-left: 3px solid var(--accent);
+    background: color-mix(in srgb, var(--surface-strong) 50%, transparent);
+    color: var(--text);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+.reflection-callout strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.update-media-block {
+    display: grid;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.update-image-frame {
+    aspect-ratio: 16 / 9;
+    max-height: 400px;
+}
+
+.code-snippet-box {
+    position: relative;
+    padding: 18px 20px;
+    border: 1px solid var(--line);
+    background: var(--surface-strong);
+    overflow-x: auto;
+}
+
+.code-snippet-box pre {
+    margin: 0;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--text);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.update-action-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}

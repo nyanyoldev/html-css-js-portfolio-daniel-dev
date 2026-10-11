@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 2 | Daniel Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Daniel Dev home">
+                <span class="brand-mark"><span>D</span><img src="assets/brand-logo.jpg" alt="Daniel Dev logo"></span>
+                <span>Daniel Dev Portfolio</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="qualities.html">Qualities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="workshop2.html">Workshop 2</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button>
+                <button class="icon-button menu-button" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-intro">
+            <p class="eyebrow">Workshop 2</p>
+            <h1>Workshop 2 Update Hub</h1>
+            <p class="lead">
+                A live progress log, reflection journal, and milestone tracker documenting my Workshop 2 project journey at UTeM.
+                Check back regularly for weekly sprint notes, technical write-ups, and multimedia demos.
+            </p>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- UPDATE FEED SECTION                                                      -->
+        <!-- To add a new update: Duplicate one of the <article class="update-card">   -->
+        <!-- blocks below, place it at the top of this feed, and customize its content.-->
+        <!-- ========================================================================= -->
+        <section class="update-feed" aria-label="Workshop 2 Updates Feed">
+
+            <!-- ===================================================================== -->
+            <!-- [TEMPLATE & SAMPLE ENTRY 03] - Latest Update                          -->
+            <!-- ===================================================================== -->
+            <article class="update-card">
+                <header class="update-meta-row">
+                    <div class="update-date-badge">
+                        <span>&#128197; Week 06 &bull; April 2026</span>
+                    </div>
+                    <ul class="update-pills">
+                        <li class="update-pill accent">Milestone</li>
+                        <li class="update-pill">UI/UX</li>
+                        <li class="update-pill">UTeM Task</li>
+                    </ul>
+                </header>
+
+                <h2>Interactive Prototyping & Usability Testing</h2>
+
+                <div class="update-body">
+                    <p>
+                        Finalized high-fidelity Figma prototypes for the primary application workflow. Conducted an initial
+                        heuristic evaluation with peers to identify usability bottlenecks, navigation clarity, and visual hierarchy.
+                    </p>
+                    
+                    <div class="reflection-callout">
+                        <strong>Reflection & Takeaways</strong>
+                        Peer feedback highlighted that simplifying the form submission flow reduced task completion time by nearly 40%.
+                        Prioritizing accessibility contrast early prevents major rework later.
+                    </div>
+                </div>
+
+                <!-- Media / Placeholder preview area -->
+                <div class="update-media-block">
+                    <!-- Image Frame: Uses the portfolio's built-in image handler with fallback placeholder label -->
+                    <div class="image-frame update-image-frame" data-label="Add assets/workshop-prototype.png">
+                        <img src="" alt="Workshop 2 Prototype Preview">
+                    </div>
+                </div>
+
+                <footer class="update-action-row">
+                    <a class="button secondary" href="#" target="_blank" rel="noreferrer">View Prototype</a>
+                    <a class="text-link" href="#" target="_blank" rel="noreferrer">Figma Board &rarr;</a>
+                </footer>
+            </article>
+
+            <!-- ===================================================================== -->
+            <!-- [SAMPLE ENTRY 02] - Technical / Code Update                           -->
+            <!-- ===================================================================== -->
+            <article class="update-card">
+                <header class="update-meta-row">
+                    <div class="update-date-badge">
+                        <span>&#128197; Week 04 &bull; March 2026</span>
+                    </div>
+                    <ul class="update-pills">
+                        <li class="update-pill">Code</li>
+                        <li class="update-pill">Database</li>
+                    </ul>
+                </header>
+
+                <h2>Database Schema Design & Backend Architecture Setup</h2>
+
+                <div class="update-body">
+                    <p>
+                        Established the relational database models and normalized table relations (3NF) to support scalable records.
+                        Configured basic RESTful API endpoints for user authentication and session management.
+                    </p>
+                </div>
+
+                <!-- Code snippet preview section -->
+                <div class="update-media-block">
+                    <div class="code-snippet-box">
+                        <pre><code>// Sample REST endpoint setup for Workshop 2 backend
+app.get('/api/workshop2/milestones', async (req, res) => {
+    try {
+        const records = await db.query('SELECT * FROM workshop_logs ORDER BY date DESC');
+        res.status(200).json({ success: true, data: records });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+});</code></pre>
+                    </div>
+                </div>
+
+                <div class="reflection-callout">
+                    <strong>Reflection & Takeaways</strong>
+                    Taking time to write structured SQL migration scripts rather than directly modifying schemas in phpMyAdmin
+                    saves considerable debugging time across team members.
+                </div>
+
+                <footer class="update-action-row">
+                    <a class="text-link" href="https://github.com/nyanyoldev" target="_blank" rel="noreferrer">View GitHub Commits &rarr;</a>
+                </footer>
+            </article>
+
+            <!-- ===================================================================== -->
+            <!-- [SAMPLE ENTRY 01] - Project Inception / Concept                       -->
+            <!-- ===================================================================== -->
+            <article class="update-card">
+                <header class="update-meta-row">
+                    <div class="update-date-badge">
+                        <span>&#128197; Week 01 &bull; March 2026</span>
+                    </div>
+                    <ul class="update-pills">
+                        <li class="update-pill">UTeM Task</li>
+                        <li class="update-pill">Reflections</li>
+                    </ul>
+                </header>
+
+                <h2>Project Proposal & Requirements Gathering</h2>
+
+                <div class="update-body">
+                    <p>
+                        Officially kicked off Workshop 2 at UTeM. Defined the project problem statement, target audience personas,
+                        functional requirements, and project scope document.
+                    </p>
+                    
+                    <div class="reflection-callout">
+                        <strong>Reflection & Takeaways</strong>
+                        A clear project scope is essential to avoid feature creep. Setting strict boundaries early ensures
+                        all core features are high quality and thoroughly tested.
+                    </div>
+                </div>
+
+                <footer class="update-action-row">
+                    <a class="button secondary" href="projects.html">Related Projects</a>
+                </footer>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Daniel Dev. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

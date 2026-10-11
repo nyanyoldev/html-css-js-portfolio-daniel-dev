@@ -78,7 +78,8 @@
     .project-list,
     .qualities-list,
     .skill-columns,
-    .contact-layout {
+    .contact-layout,
+    .update-feed {
         max-width: 100vw;
         overflow-x: hidden;
     }
@@ -194,6 +195,21 @@
     .contact-form {
         padding: 18px;
         text-align: left;
+    }
+
+    .update-card {
+        padding: 24px 18px;
+        text-align: left;
+    }
+
+    .update-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .update-action-row {
+        justify-content: flex-start;
     }
 }
 
