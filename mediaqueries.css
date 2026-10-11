@@ -211,6 +211,30 @@
     .update-action-row {
         justify-content: flex-start;
     }
+
+    .workshop-subnav-container {
+        justify-content: stretch;
+    }
+
+    .workshop-subnav {
+        width: 100%;
+        justify-content: space-between;
+        padding: 4px;
+        border-radius: 12px;
+        gap: 4px;
+    }
+
+    .subnav-tab {
+        flex: 1;
+        justify-content: center;
+        padding: 9px 10px;
+        font-size: 0.8rem;
+    }
+
+    .log-card {
+        padding: 20px 18px;
+        text-align: left;
+    }
 }
 
 @media (max-width: 420px) {
